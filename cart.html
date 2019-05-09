@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head> 
+    <meta charset= "UTF-8">
+</head> 
+<body> 
+        <h1><i>24H Flower Shop</i></h1>
+
+<div class="left"></div>
+<div id="left"></div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#F4F6F7; text-align: center 
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+</style>
+
+<div class="navbar">
+  <a href="productflowers.html">Home</a>
+  <input type="button" value="Logout" name="submit" id="logout" onclick="logout();"/>
+</div> 
+
+<h3>Your Shopping Cart</h3>
+
+<button id="order-btn" onclick="location.href= 'orderForm.html'">Buy everything</button>
+<button id="back-btn" onclick="location.href= 'productflowers.html'">Go back to shop</button>
+
+<table id = "table">
+  <thead id = "thead">
+    <tr>
+      <th> Flower </th>
+      <th> Name </th>
+      <th> Description </th>
+      <th> Quantity </th>
+      <th> Price </th>
+    </tr>
+  </thead>
+  <tbody id="cartCatalog">
+  </tbody>
+</table>     
+
+<script src="./js/Product Class.js" ></script>
+<script src="./js/defProducts.js" ></script>
+<script src="./js/lineItem Class.js" ></script>
+<script src="./js/cart.js" ></script>
+<script src="./js/login.js"></script>
+
+    </body>
+    </html>

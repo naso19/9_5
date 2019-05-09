@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head> 
+    <meta charset= "UTF-8">
+</head> 
+<body> 
+        <h1><i>Welcome to the 24-hour open Flowershop!</i></h1>
+
+<div class="left"></div>
+<div id="left"></div>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {background-color:#F4F6F7; text-align: center 
+}  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+</style>
+
+<body>
+
+<div class="navbar">
+
+  <a href="Loginpage.html">Login</a>
+  <a href="createuser.html">Create user</a>
+  
+</div>
+
+<p>Hand-picked flowers from around the world</p>
+
+<h1>Create a new user</h1>
+
+<div class="formDiv">
+    <span>First Name:</span>
+    <input type="text" id="first-name">
+</div>
+
+<div class="formDiv">
+    <span>Last Name:</span>
+    <input type="text" id="last-name">
+</div>
+
+<div class="formDiv">
+    <span>Username:</span>
+    <input type="text" id="username">
+</div>
+
+<div class="formDiv">
+    <span>Password:</span>
+    <input type="password" id="password" placeholder="min. 8 characters">
+</div>
+
+<div class="formDiv">
+    <input type="checkbox" id="terms">
+    <span>I agree to the terms and conditions</span>
+</div>
+
+<div class="formDiv">
+    <input type="button" value="Complete Registration" id="submit-btn"> 
+</div>
+    
+    <input type="text" name= "username" id="uname"/>
+    <input type="password" name="password" id="pw" />
+    <input type="button" value="Login please" name="submit" id="login" onclick="login();"/>
+    <span id="login"></span>
+
+<script src="./js/classuser.js"></script>
+<script src="./js/defusers.js"></script>
+<script src="./js/registration.js"></script>
+<script src="./js/login.js"></script> 
+
+    </body>
+    </html>

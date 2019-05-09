@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head> 
+    <meta charset= "UTF-8">
+</head> 
+<body> 
+        <h1><i>Welcome to Checkout!</i></h1>
+
+<div class="left"></div>
+<div id="left"></div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#F4F6F7; text-align: center 
+}
+    
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+    
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}    
+</style>
+
+<body>
+
+<div class="navbar">
+<a href="productflowers.html">Home</a>
+<button id="cart-btn" onclick="location.href= 'cart.html'">Go back to cart</button>
+<input type="button" value="Logout" name="submit" id="logout" onclick="logout();"/>
+</div>
+
+<h1>Your order</h1>
+
+<table id = "table">
+  <thead id = "thead">
+    <tr>
+      <th> Flower </th>
+      <th> Quantity </th>
+      <th> Price </th>
+    </tr>
+  </thead>
+  <tbody id="orderCatalog"></tbody>
+</table>     
+
+<h3>Please fill in the recipient's information!</h3>
+
+<div class="formDiv">
+    <span>First Name:</span>
+    <input type="text" id="first-name">
+</div>
+
+<div class="formDiv">
+    <span>Last Name:</span>
+    <input type="text" id="last-name">
+</div>
+
+<div class="formDiv">
+    <span>Street:</span>
+    <input type="text" id="street">
+</div>
+
+<div class="formDiv">
+    <span>Zip code:</span>
+    <input type="text" id="zipCode">
+</div>
+
+<div class="formDiv">
+    <span>City:</span>
+        <input type="text" id="city" placeholder="Copenhagen" disabled>
+</div>
+
+<div class="formDiv">
+    <span>Delivery Date:</span>
+    <input type="date" id="deliveryDate">
+</div>
+
+<div class="formDiv">
+    <span>Delivery Time:</span>
+     <input type="time" value="08:30" step="600"  id="deliveryTime">
+</div>
+
+<div class="formDiv">
+    <span>Additional Comments:</span>
+</div>  
+
+<div>           
+    <textarea rows="5" cols="80" id="comment-field">
+    </textarea>
+</div>
+
+<div class="formDiv">
+    
+    <input type="checkbox" id="terms">
+    <span>I agree to the terms and conditions</span>
+</div>
+
+<div class="formDiv">
+    <input type="button" value="Continue to payment" id="submit-btn"> 
+</div>
+    
+<script src="./js/classuser.js"></script>
+<script src="./js/defusers.js"></script>
+<script src="./js/Product Class.js"></script> 
+<script src="./js/defProducts.js"></script> 
+<script src="./js/lineItem Class.js"></script> 
+<script src="./js/Order class.js"></script>
+<script src="./js/orderform.js"></script> 
+<script src="./js/login.js"></script>
+
+</body>
+</html>

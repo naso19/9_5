@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head> 
+    <meta charset= "UTF-8">
+
+</head> 
+<body> 
+        <h1><i>Welcome to the 24-hour open Flowershop!</i></h1>
+
+<div class="left"></div>
+<div id="left"></div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#F4F6F7; text-align: center 
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+</style>
+
+<div class="navbar">
+  <a href="productflowers.html">Home</a>
+  <input type="button" value="Logout" name="submit" id="logout" onclick="logout();"/>
+</div> 
+
+<div>
+  <input type="text" id="search" placeholder="Type to search"> <button onclick=filterResults(event)>Search</button>
+</div>
+
+<div> 
+  <input type="button" value="myCart" name="My Cart" id="myCart" onclick="location='cart.html'"/>
+</div>
+
+<h3>Hand-picked flowers from around the world!</h3>
+
+  <body>
+        <table id = "table">
+          <thead id = "thead">
+            <tr>
+              <th> Flower </th>
+              <th> Name </th>
+              <th> Description </th>
+              <th> Price </th>
+            </tr>
+          </thead>
+          <tbody id="catalog">
+          </tbody>
+           </table>
+
+<script src="./js/Product Class.js" ></script>
+<script src="./js/defProducts.js" ></script>
+<script src="./js/productflowers.js" ></script> 
+<script src="./js/lineItem Class.js" ></script>
+<script src="./js/login.js" ></script>
+   
+  </body>
+</html>
